@@ -1,0 +1,16 @@
+action (BuildPodcastAudioInfo) {
+  type (Search)
+  description (Makes a podcast audio info, aka a playlist, to play.)
+  collect {
+    input (podcastAudio) {
+      type (PodcastAudio)
+      min (Required) max (Many)
+      default-init {
+        intent {
+          goal: FindPodcast
+        }
+      }
+    }
+  }
+  output (audioPlayer.AudioInfo)
+}

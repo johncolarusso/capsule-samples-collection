@@ -7,7 +7,7 @@ const audioItems = [{
       }
     ],
     title: "Cat-ch Phrase",
-    subtitle: "Meow.",
+    subtitle: "meow.",
     artist: "Cool Cat",
     albumName: "Catatonic",
     albumArtUrl: "https://storage.googleapis.com/bixby-audio-player-example/meows/cat-08.jpg"
@@ -21,7 +21,7 @@ const audioItems = [{
       }
     ],
     title: "Fur Real?",
-    subtitle: "Meow meow.",
+    subtitle: "meow meow.",
     artist: "Tom Cat",
     albumName: "You gotta be kitten me!",
     albumArtUrl: "https://storage.googleapis.com/bixby-audio-player-example/meows/cat-in-a-basket.jpg"
@@ -35,7 +35,7 @@ const audioItems = [{
       }
     ],
     title: "Mew-sic",
-    subtitle: "Meow meow meow.",
+    subtitle: "meow meow meow.",
     artist: "Radi-claw",
     albumArtUrl: "https://storage.googleapis.com/bixby-audio-player-example/meows/cat.png"
   }]

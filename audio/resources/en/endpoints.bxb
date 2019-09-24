@@ -1,15 +1,15 @@
 endpoints {
   action-endpoints {
-    action-endpoint (PlayMeow) {
-      local-endpoint (PlayMeow.js)
+    action-endpoint (PlayPodcast) {
+      local-endpoint (PlayPodcast.js)
     }
-    action-endpoint (BuildMeowAudioInfo) {
-      accepted-inputs (meowAudio)
-      local-endpoint (BuildMeowAudioInfo.js)
+    action-endpoint (BuildPodcastAudioInfo) {
+      accepted-inputs (podcastAudio)
+      local-endpoint (BuildPodcastAudioInfo.js)
     }
-    action-endpoint (FindMeow) {
+    action-endpoint (FindPodcast) {
       accepted-inputs (searchTerm)
-      local-endpoint (FindMeow.js)
+      local-endpoint (FindPodcast.js)
     }
   }
 }

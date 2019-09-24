@@ -1,19 +1,19 @@
-var meowAudio = require('./meowAudio.js')
+var podcastAudio = require('./podcastAudio.js')
 
-module.exports.function = function findMeow(searchTerm) {
+module.exports.function = function findPodcast(searchTerm) {
     const keysToSearchOn = ['title', 'artist', 'subtitle', 'albumName']
-    let meowAudioFound = []
+    let podcastAudioFound = []
 
     if (searchTerm) {
         searchTerm = searchTerm.toLowerCase()
-        meowAudioFound = meowAudio.audioItems.filter(function (audioItem) {
+        podcastAudioFound = podcastAudio.audioItems.filter(function (audioItem) {
             keysToSearchOn.some(function (key) {
                 return audioItem[key] && audioItem[key].toLowerCase().includes(searchTerm)
             })
         })
     } else {
-        meowAudioFound = meowAudio.audioItems
+        podcastAudioFound = podcastAudio.audioItems
     }
 
-    return meowAudioFound
+    return podcastAudioFound
 }

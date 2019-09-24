@@ -1,5 +1,5 @@
 capsule {
-  id (example.meow)
+  id (example.podcast)
   version (0.2.0)
   format (3)
   targets {

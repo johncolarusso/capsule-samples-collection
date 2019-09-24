@@ -1,10 +1,10 @@
-module.exports.function = function buildMeowAudioInfo(meowAudio) {
+module.exports.function = function buildPodcastAudioInfo(podcastAudio) {
   var audioInfo = {};
 
-  /* Since meowAudio are already in audioItem format this mapping is not necessary, but
+  /* Since podcastAudio are already in audioItem format this mapping is not necessary, but
   this demonstrates how to build the right structure for audioItem and audioInfo */
 
-  audioInfo.audioItem = meowAudio.map(function (audioItem) {
+  audioInfo.audioItem = podcastAudio.map(function (audioItem) {
     let audioItemStructure = { //required properties of audioItem
       id: audioItem.id,
       stream: audioItem.stream,
@@ -26,7 +26,7 @@ module.exports.function = function buildMeowAudioInfo(meowAudio) {
   });
 
   audioInfo.category = 'RADIO';
-  audioInfo.displayName = 'Meow Capsule';
+  audioInfo.displayName = 'Podcast Capsule';
   audioInfo.repeatMode = 'ALL';
   audioInfo.doNotWaitForTTS = false;
 
