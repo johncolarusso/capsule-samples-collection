@@ -1,0 +1,14 @@
+dialog (NoResult) {
+  match {
+    PodcastAudio {
+      from-output {
+        FindPodcast {
+          from-input {
+            SearchTerm (searchTerm)
+          }
+        }
+      }
+    }
+  }
+  template("Sorry, I couldn't find any podcasts related to #{value(searchTerm)}.")
+}

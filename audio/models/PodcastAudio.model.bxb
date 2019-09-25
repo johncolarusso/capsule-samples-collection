@@ -1,3 +1,8 @@
 structure (PodcastAudio) {
-  role-of (audioPlayer.AudioItem)
+  extends (audioPlayer.AudioItem)
+  property (tags) {
+    type (core.Text)
+    visibility (Private)
+    max (Many)
+  }
 }

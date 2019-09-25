@@ -1,7 +1,0 @@
-hints {
-  uncategorized {
-    hint ("In Podcast Audio Player Sample Capsule, podcast at me")
-    hint ("In Podcast Audio Player Sample Capsule, podcast")
-    hint ("In Podcast Audio Player Sample Capsule, say podcast")
-  }
-}

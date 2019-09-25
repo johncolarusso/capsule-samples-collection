@@ -1,0 +1,30 @@
+result-view {
+  match {
+    Result {
+      from-output {
+        PlayPodcast {
+          from-input {
+            audioPlayer.AudioInfo (audioInfo)
+          }
+        }
+      }
+    }
+  }
+
+  message ("Here's #{value(audioInfo.audioItem[0].title)}[ by #{value(audioInfo.audioItem[0].artist)}].")
+
+  render {
+    layout {
+      section {
+        content {
+          image {
+            url ("#{value(audioInfo.audioItem[0].albumArtUrl)}")
+            object-fit (Contain)
+            aspect-ratio (1:1)
+            lightbox-enabled (false)
+          }
+        }
+      }
+    }
+  }
+}

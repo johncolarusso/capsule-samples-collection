@@ -10,7 +10,8 @@ const audioItems = [{
     subtitle: "meow.",
     artist: "Cool Cat",
     albumName: "Catatonic",
-    albumArtUrl: "https://storage.googleapis.com/bixby-audio-player-example/meows/cat-08.jpg"
+    albumArtUrl: "https://storage.googleapis.com/bixby-audio-player-example/meows/cat-08.jpg",
+    tags: ["nature"]
   },
   {
     id: 2,
@@ -37,7 +38,8 @@ const audioItems = [{
     title: "Mew-sic",
     subtitle: "meow meow meow.",
     artist: "Radi-claw",
-    albumArtUrl: "https://storage.googleapis.com/bixby-audio-player-example/meows/cat.png"
+    albumArtUrl: "https://storage.googleapis.com/bixby-audio-player-example/meows/cat.png",
+    tags: ["apple", "banana"]
   }]
 
   exports.audioItems = audioItems
