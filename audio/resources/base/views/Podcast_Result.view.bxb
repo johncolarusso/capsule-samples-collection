@@ -11,7 +11,7 @@ result-view {
     }
   }
 
-  message ("Here's #{value(audioInfo.audioItem[0].title)}[ by #{value(audioInfo.audioItem[0].artist)}].")
+  message ("Here's #{value(audioInfo.audioItem[0].title)}[ from #{value(audioInfo.audioItem[0].artist)}].")
 
   render {
     layout {

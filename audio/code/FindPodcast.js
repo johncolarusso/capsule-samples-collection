@@ -1,12 +1,12 @@
-var podcastAudio = require('./podcastAudio.js')
+// var podcastAudio = require('./podcastAudio.js')
 
-module.exports.function = function findPodcast(searchTerm) {
+module.exports.function = function findPodcast(podcastAudio, searchTerm) {
     const keysToSearchOn = ['title', 'artist', 'subtitle', 'albumName']
     let podcastAudioFound = []
 
     if (searchTerm) {
         searchTerm = searchTerm.toLowerCase()
-        podcastAudioFound = podcastAudio.audioItems.filter(function (audioItem) {
+        podcastAudioFound = podcastAudio.filter(function (audioItem) {
             return keysToSearchOn.some(function (key) {
                 return audioItem[key] && audioItem[key].toLowerCase().includes(searchTerm)
             })
@@ -16,7 +16,7 @@ module.exports.function = function findPodcast(searchTerm) {
             }));
         })
     } else {
-        podcastAudioFound = podcastAudio.audioItems
+        podcastAudioFound = podcastAudio
     }
 
     return podcastAudioFound

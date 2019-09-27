@@ -1,11 +1,8 @@
 module.exports.function = function buildPodcastAudioInfo(podcastAudio) {
   var audioInfo = {};
 
-  /* Since podcastAudio are already in audioItem format this mapping is not necessary, but
-  this demonstrates how to build the right structure for audioItem and audioInfo */
-
   audioInfo.audioItem = podcastAudio.map(function (audioItem) {
-    let audioItemStructure = { //required properties of audioItem
+    let audioItemStructure = {
       id: audioItem.id,
       stream: audioItem.stream,
       title: audioItem.title,

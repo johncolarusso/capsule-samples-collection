@@ -8,8 +8,12 @@ endpoints {
       local-endpoint (BuildPodcastAudioInfo.js)
     }
     action-endpoint (FindPodcast) {
-      accepted-inputs (searchTerm)
+      accepted-inputs (podcastAudio, searchTerm)
       local-endpoint (FindPodcast.js)
+    }
+    action-endpoint (GetPodcasts) {
+      accepted-inputs ()
+      local-endpoint (GetPodcasts.js)
     }
   }
 }
