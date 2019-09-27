@@ -22,7 +22,7 @@ module.exports.function = function buildPodcastAudioInfo(podcastAudio) {
     return audioItemStructure
   });
 
-  audioInfo.category = 'RADIO';
+  audioInfo.category = 'PODCAST';
   audioInfo.displayName = 'Podcast Capsule';
   audioInfo.repeatMode = 'ALL';
   audioInfo.doNotWaitForTTS = false;

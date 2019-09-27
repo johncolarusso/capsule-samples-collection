@@ -1,5 +1,5 @@
 action (GetPodcasts) {
   description (__DESCRIPTION__)
   type (Search)
-  output (PodcastAudio)
+  output (audioPlayer.AudioItem)
 }
